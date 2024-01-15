@@ -1,0 +1,209 @@
+.grid-item { 
+    display: block;
+    width: 25%; 
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.grid-item .pre-item {
+    overflow: hidden;
+}
+
+.grid-item .pre-item img {
+    transition: all .3s;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+.pre-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.mgxb-50 {
+    margin-bottom: 50px;
+}
+
+.icon-spa {
+    font-size: 50px;
+}
+
+.libpy-gallery-sub-html {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%) !important;
+    padding: 20px 40px !important;
+}
+
+.libpy-gallery-sub-html a {
+    background: #fff;
+    width: 180px;
+    padding: 0px 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: ease-in-out .3s;
+}
+
+.libpy-gallery-sub-html a:hover {
+    background: #1b1b1b;
+    border: 1px solid rgb(213, 213, 213);;
+    color: #fff;
+}
+
+.libpy-gallery-sub-html a::before {
+    content: "\f3c0";
+    font-size: 24px;
+    margin-right: 10px;
+    font-family: "Font Awesome 6 Brands";
+}
+
+.libpy-gallery-sub-html h3 {
+    font-family: 'Kanit-Medium';
+    margin: 5px 0 !important;
+    font-size: 16px;
+}
+
+.libpy-gallery-sub-html h5 {
+    font-size: 15px;
+    width: 50%;
+    height: auto;
+    max-height: 50px;
+    overflow: auto;
+    /* margin-top: 20px !important; */
+    margin: 0 auto;
+    color: rgb(200, 200, 200);
+}
+
+.libpy-gallery-sub-html h5::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px #ffffff;
+    background-color: #ffffff;
+}
+
+.libpy-gallery-sub-html h5::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #1B1B1B;
+}
+
+.libpy-gallery-sub-html h5::-webkit-scrollbar-thumb
+{
+	background-color: #1B1B1B;
+}
+
+.owl-carousel.spa-carousel .owl-stage {
+    height: 100% !important;
+}
+
+.owl-carousel.spa-carousel .owl-nav .owl-prev, .owl-carousel.spa-carousel .owl-nav .owl-next {
+    top: 50%;
+    margin-top: -22px;
+}
+
+.owl-carousel.spa-carousel .owl-nav .owl-prev {
+    left: 0;
+}
+
+.owl-carousel.spa-carousel .owl-nav .owl-next {
+    right: 0;
+}
+
+.spa-wrap-box {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.spa-wrap-box:hover .spa-wrap-desc {
+    transform: translateY(0px);
+}
+
+.spa-wrap-box:hover .spa-wrap-title {
+    transform: translateY(-320px);
+}
+
+.spa-wrap-desc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1B1B1B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    transform: translateY(320px);
+    transition: all .4s;
+}
+
+.spa-wrap-desc h5 {
+    font-size: 18px;
+}
+
+.spa-wrap-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    transform: translateY(0px);
+    transition: all .4s;
+}
+
+.spa-wrap-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .grid-item { 
+        width: 33.33%
+    }
+
+    .txt-spa h5 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .grid-item { 
+        width: 50%;
+    }
+
+    .libpy-gallery-sub-html h5 {
+        width: 100%;
+    }
+
+    .txt-spa h5 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .grid-item { 
+        width: 100%;
+    }
+
+    .txt-spa {
+        width: 100%;
+    }
+}
